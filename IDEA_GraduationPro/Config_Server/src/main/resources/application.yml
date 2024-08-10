@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/jalynn-h/config-repo
+          skip-ssl-validation: true
+          username: 15013906
+          password: Aa123456
+
+eureka:
+  client:
+    service-url:
+      deaultZone: http://localhost:8761/eureka

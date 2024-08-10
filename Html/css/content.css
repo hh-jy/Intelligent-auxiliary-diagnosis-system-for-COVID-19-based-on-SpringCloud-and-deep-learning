@@ -1,0 +1,402 @@
+.title {
+    /* background-color: rgb(255, 255, 255); */
+    height: 60px;
+    margin: 0 0 0 145px;
+    text-align: center;
+    line-height: 60px;
+    display: flex;
+}
+.logo{
+    /* background-color: rgb(132, 132, 182); */
+    flex: 1;
+    /* text-align: 30px; */
+}
+.logo img{
+    width: 60px;
+}
+.logo span{
+    font-size: 35px;
+    color: lightseagreen;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.user{
+    /* background-color: aqua; */
+    width: 145px;
+    text-align: 30px;
+}
+.user button{
+    border: none;
+    font-size: 10px;
+    color: #a1a7ad;
+}
+.main{
+    /* background-color: bisque; */
+    height: 100%;
+    margin: 0 0 0 145px;
+    position: relative;
+}
+.top{
+    /* background-color: aquamarine; */
+    height: 50px;
+    display: flex;
+    line-height: 50px;
+}
+.upload{
+    /* background-color: beige; */
+    width: 70%;
+    padding-left: 30px;
+    /* padding-top: 18px; */
+    /* text-align: center; */
+}
+/*隐藏原input*/
+.upload input {
+	display: none;
+}
+/*美化自定义按钮*/
+.file-input-trigger {
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 1px solid #6780dd;
+    background-color: #6780dd;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.down{
+    border-bottom: solid 2px lightgray;
+    display: iniline-block;
+    width: 400px;
+    height: 30px;
+    /* padding: 0px 8px; */
+    float: right;
+    margin-right: 250px;
+    /* text-align: center; */
+    margin-top: 10px;
+    position: relative;
+}
+.file-name{
+    text-align: center;
+}
+.patient{
+    /* background-color: salmon; */
+    flex: 1;
+    padding-left: 30px;
+    position: relative;
+}
+.num{
+    /* background-color: aquamarine; */
+    height: 50px;
+    display: inline-block;
+    margin-left: 10px;
+    width: 100%;
+    position: absolute;
+}
+.num input{
+    position: absolute;
+    margin-top: 15px;
+    padding-left: 3px;
+    height: 50%;
+    line-height: 50px;
+    width: 80%;
+    font-size: 15px;
+    color: lightgray;
+    border: none;
+    border-bottom: solid 2px lightgray;
+}
+.num label{
+    position: absolute;
+    font-weight: normal;
+    left: 3px;
+    line-height: 50px;
+    bottom: 0;
+    color: darkgray;
+    transition: all 0.3s ease;
+}
+.num input:focus~label,
+.num input:valid~label{
+    transform: translateY(-20px);
+    font-size: 8px;
+    color: lightseagreen;
+    left: 0;
+}
+.num .underline{
+    position: absolute;
+    margin-top: 15px;
+    line-height: 50px;
+    width: 80%;
+    height: 2px;
+    bottom: 10px;
+    background-color: lightseagreen;
+    transform: scale(0);
+    transition: all 0.3s ease;
+}
+.num input:focus~.underline,
+.num input:valid~.underline{
+    transform: scale(1);
+}
+.star{
+    color: red;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.diag{
+    /* background-color: burlywood; */
+    height: 100%;
+    width: 100%;
+}
+.xray{
+    /* background-color: darkgray; */
+    width: 60%;
+    height: 80%;
+    margin-left: 30px;
+    margin-top: 30px;
+    position: absolute;
+}
+.img_diag{
+    /* background-color: #6780dd; */
+    text-align: center;
+    line-height: 400px;
+
+    /* border-image-source: radial-gradient(60% 60%, transparent 0px, transparent 100%, lightgray 100%);
+    border-image-slice: 1;
+    border-width: 2px;
+    border-style: solid; */
+    box-shadow: -3px -3px 5px rgba(179, 175, 175, 0.5);
+}
+#x_img{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+.right{
+    clear: both;
+    /* background-color: darksalmon; */
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    margin-left: 68%;
+    margin-top: 30px;
+}
+.result{
+    /* background-color: coral; */
+    /* position: absolute;
+    float: left;
+    margin: 10px;
+    width: 94%; */
+    height: 300px;
+    border: solid 1px lightgray;
+    border-radius: 10px;
+    box-shadow: -3px -3px 5px rgba(46, 45, 45, 0.5);
+}
+.repo{
+    /* background-color: darkseagreen; */
+    /* position: absolute;
+    float: left;
+    margin: 10px;
+    width: 94%; */
+    height: 280px;
+    /* margin-top: 97%; */
+    position: relative;
+    margin-top: 10px;
+}
+.repo .repo_title{
+    position: absolute;
+    width: 100%;
+    /* background-color: #6780dd; */
+    height: 15%;
+    text-align: center;
+    padding-top: 5px;
+    
+}
+.repo .repo_title span{
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: rgb(42, 150, 135);
+}
+.repo .repo_content{
+    position: absolute;
+    width: 100%;
+    background-color: #a1a7ad;
+    height: 80%;
+    margin-top: 35px;
+}
+.repo .repo_content textarea{
+    position: absolute;
+    border-radius: 5px;
+    border: solid 2px lightgray;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 8px;
+}
+.repo .repo_content textarea:hover{
+    border-color: rgb(42, 150, 135);
+    transition: all 0.2s ease;
+}
+
+.repo .repo_btn{
+    position: absolute;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    height: 30px;
+    margin-top: 270px;
+}
+.repo .repo_btn button{
+    float: right;
+    background-color: lightseagreen;
+    letter-spacing: 2px;
+}
+
+.img_diag{
+    /* background-color: blueviolet; */
+    /* position: absolute;
+    margin: 10px;
+    width: 97%; */
+    height: 90%;
+}
+.btn_diag{
+    /* background-color: darkgreen; */
+    /* position: absolute;
+    width: 97%; */
+    height: 50px;
+    /* margin: 485px 10px 0 10px; */
+    line-height: 50px;
+    text-align: center;
+    margin-top: 6px;
+}
+.btn_diag button {
+    background-color: lightseagreen;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+.btn_diag button:hover {
+    background-color: #fff;
+    color: lightseagreen;
+    border: 1px solid #ccc;
+  }
+
+.result .top{
+    /* background-color: #6780dd; */
+    height: 20%;
+    line-height: 20%;
+    text-align: center;
+    position: relative;
+}
+.result .top p{
+    position: absolute;
+    /* background-color: rgb(53, 53, 53); */
+    width: 100%;
+    /* margin-top: 20px; */
+    color: rgb(42, 150, 135);
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.result .middle{
+    /* background-color: #a1a7ad; */
+    height: 60%;
+    position: relative;
+}
+.result .middle .words{
+    /* background-color: #6780dd; */
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.result .middle .pre_resl{
+    position: absolute;
+    /* background-color: darkblue; */
+    width: 100%;
+    margin-top: 40px;
+    height: 110px;
+    text-align: center;
+    line-height: 120px;
+}
+.result .middle .pre_resl .circle{
+    position: relative;
+    /* background-color: #6780dd; */
+    margin: auto;
+    width: 100px;
+    height: 110px;
+    top: 50%;
+    margin-top: -55px;
+    border-radius: 55px;
+    border: solid 2px #6780dd;
+    border-left: 5px;
+    border-top: 2px;
+}
+.circle span{
+    font-size: 30px;
+    font-weight: bolder;
+    /* 阳性为红色，阴性为绿色 */
+    color: green; 
+}
+.result .middle .tips{
+    /* background-color: #6c7ec0; */
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    margin-top: 152px;
+    padding-top: 8px;
+    text-align: center;
+    font-size: smaller;
+    color: lightgray;
+}
+.result .bottom{
+    /* background-color: cadetblue; */
+    height: 20%;
+}
+.result .bottom .type{
+    position: absolute;
+    /* background-color: bisque; */
+    width: 100%;
+    height: 62px;
+    line-height: 65px;
+    /* padding-left: 40px; */
+    text-align: center;
+}
+.result .bottom .type .type_t{
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.result .bottom .type .type_d{
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #6780dd;
+}
+
+/*加载*/
+#loading {
+    width:60%;
+    height:60%;
+    /* border:3px solid #C3DAF9; */
+    position:absolute;
+    /* top:300px;
+    left:600px; */
+    z-index:10000;
+    line-height:25px;
+    vertical-align:middle;
+    font-size:11pt;
+    margin-left: -30px;
+    margin-top: 22px;
+    display:none;
+}
+
